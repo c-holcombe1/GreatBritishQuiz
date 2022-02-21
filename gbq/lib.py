@@ -1,10 +1,11 @@
-print('Welcome to QI')
-answer=input('Are you ready to play the Great British Quiz? (yes/no) :')
-score=0
-total_questions=3
+def try_me():
 
-if answer.lower()=='yes':
-    answer=input('Question 1: For its size, where has more tornadoes than any other country in the world.?')
+    answer=input('Are you ready to play the Great British Quiz? (yes/no) :')
+    score=0
+    total_questions=3
+
+    if answer.lower()=='yes':
+     answer=input('Question 1: For its size, where has more tornadoes than any other country in the world.?')
     if answer.lower()=='britain':
         score += 1
         print('correct')
@@ -26,7 +27,7 @@ if answer.lower()=='yes':
     else:
         print('Wrong Answer :(')
 
-print('Thankyou for Playing this small British quiz game, you attempted',score,"questions correctly!")
-mark=(score/total_questions)*100
-print('Marks obtained:',mark)
-print('BYE!')
+    print('Thankyou for Playing this small British quiz game, you attempted',score,"questions correctly!")
+    mark=(score/total_questions)*100
+    print('Marks obtained:',mark)
+    print('BYE!')
